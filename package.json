@@ -1,0 +1,35 @@
+{
+  "name": "MyLittleHeroMLH",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio run ./wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aikamatyeva/MyLittleHeroMLH.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aikamatyeva/MyLittleHeroMLH/issues"
+  },
+  "homepage": "https://github.com/aikamatyeva/MyLittleHeroMLH#readme",
+  "dependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/register": "^7.13.8",
+    "@wdio/cli": "^7.2.1"
+  },
+  "devDependencies": {
+    "@wdio/dot-reporter": "^7.2.1",
+    "@wdio/local-runner": "^7.2.1",
+    "@wdio/mocha-framework": "^7.2.1",
+    "@wdio/selenium-standalone-service": "^7.2.1",
+    "@wdio/spec-reporter": "^7.2.1",
+    "@wdio/sync": "^7.2.1"
+  }
+}

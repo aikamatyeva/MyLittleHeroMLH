@@ -1,15 +1,18 @@
-describe('My Little Hero', function () { //define suite title by passing a string
+import sel from '../data/selectors.js';
+import exp from '../data/expectedResults.json';
 
-    describe('Getting to the page', function () { //define sub-suite title by passing a string
+describe('My Little Hero', function () {
+
+    describe('Getting to the page', function () {
 
         before('Open application', function () {
-            browser.url('https://qa-apps.netlify.app/hero'); //open baseUrl
+            browser.url('');
         });
 
-        it('TC-001 Page Title is MLH trial ', function () { //define test title by passing a string
-            let title = browser.getTitle(); //get page title and assign it to the "title" variable
-            browser.pause(2000); //just pause to visually see that something is happening on the page
-            expect(title).toEqual('MLH trial'); //compare {title} (actual) and "MLH trial" (expected)
+        it('TC-001 Page Title is MLH trial ', function () {
+            let title = browser.getTitle();
+            browser.pause(2000);
+            expect(title).toEqual(exp.title);
         });
 
 
@@ -18,28 +21,82 @@ describe('My Little Hero', function () { //define suite title by passing a strin
     describe('Elements exist', function () {
 
         before('Open application', function () {
-            browser.url('https://qa-apps.netlify.app/hero');
+            browser.url('');
         });
 
         it('TC-002 Header is present ', function () {
-            let header = $('h3').isDisplayed();
+            let header = $(sel.header).isDisplayed();
             expect(header).toEqual(true);
         });
 
         it('TC-003 Instruction is present ', function () {
-            let instruction = $('p').isDisplayed();
+            let instruction = $(sel.instruction).isDisplayed();
             expect(instruction).toEqual(true);
         });
 
         it('TC-004 Name field label is present ', function () {
-            let instruction = $$('.ant-form-item-required')[0].isDisplayed();
-            expect(instruction).toEqual(true);
+            let nameFieldLabel = $$(sel.requiredFieldLabels)[0].isDisplayed();
+            expect(nameFieldLabel).toEqual(true);
         });
 
-        it('TC-007 Gender radio buttons is present ', function () {
-            let radioButtons = $$('.ant-radio-input').length;
-            expect(radioButtons).toEqual(3);
+        it('TC-005 Name field is present ', function () {
+            let nameField = $(sel.nameField).isDisplayed();
+            expect(nameField).toEqual(true);
         });
 
+        it('TC-006 Gender radio label is present ', function () {
+            let genderRadioLabel = $$(sel.requiredFieldLabels)[1].isDisplayed();
+            expect(genderRadioLabel).toEqual(true);
+        });
+
+        it('TC-007.a Gender radio button 1 is present ', function () {
+            let radioButtonsHe = $$(sel.radioButtons)[0].isDisplayed();
+            expect(radioButtonsHe).toEqual(true);
+        });
+
+        it('TC-007.b Gender radio button 2 is present ', function () {
+            let radioButtonsShe = $$(sel.radioButtons)[1].isDisplayed();
+            expect(radioButtonsShe).toEqual(true);
+        });
+
+        it('TC-007.c Gender radio button 3 is present ', function () {
+            let radioButtonsIt = $$(sel.radioButtons)[2].isDisplayed();
+            expect(radioButtonsIt).toEqual(true);
+        });
+
+        it('TC-008 Age field label is present', function () {
+            let ageFieldLabel = $$(sel.requiredFieldLabels)[2].isDisplayed();
+            expect(ageFieldLabel).toEqual(true);
+        });
+
+        it('TC-009 Age field is present ', function () {
+            let ageField = $(sel.ageField).isDisplayed();
+            expect(ageField).toEqual(true);
+        });
+
+        it('TC-010 Story field label is present', function () {
+            let storyFieldLabel = $$(sel.requiredFieldLabels)[3].isDisplayed();
+            expect(storyFieldLabel).toEqual(true);
+        });
+
+        it('TC-011 Story Type dropdown is present ', function () {
+            let storyDropdown = $(sel.storyDropdown).isDisplayed();
+            expect(storyDropdown).toEqual(true);
+        });
+
+        it('TC-012 Image field label is present', function () {
+            let storyFieldLabel = $$(sel.imageLabel)[4].isDisplayed();
+            expect(storyFieldLabel).toEqual(true);
+        });
+
+        it('TC-013 Image field is present ', function () {
+            let imageField = $(sel.image).isDisplayed();
+            expect(imageField).toEqual(true);
+        });
+
+        it('TC-014 Submit button is present', function () {
+            let createButton = $(sel.createButton).isDisplayed();
+            expect(createButton).toEqual(true);
+        });
     });
 });

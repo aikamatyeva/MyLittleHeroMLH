@@ -1,5 +1,5 @@
-import sel from '../data/selectors.js';
-import exp from '../data/expectedResults.json';
+import sel from '../../data/selectors.js';
+import exp from '../../data/expectedResults.json';
 
 describe('My Little Hero', function () {
 
@@ -99,4 +99,5 @@ describe('My Little Hero', function () {
             expect(createButton).toEqual(true);
         });
     });
+
 });

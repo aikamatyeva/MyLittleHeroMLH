@@ -1,14 +1,17 @@
 const elements = {
-    'header' : 'h3',
-    'instruction' : 'p',
-    'requiredFieldLabels' : '.ant-form-item-required',
-    'nameField' : '#name',
-    'radioButtons' : '.ant-radio',
-    'ageField' : '#age',
-    'storyDropdown' : '.ant-select-selector',
-    'imageLabel' : '.ant-form-item-label',
-    'image' : 'span.ant-upload',
-    'createButton' : '.ant-btn',
+    "header" : "h3",
+    "instruction" : "p",
+    "requiredFieldLabels" : ".ant-form-item-required",
+    "nameField" : "#name",
+    "radioButtons" : ".ant-radio",
+    "radioButtonsLabels" : ".ant-radio-wrapper",
+    "ageField" : "#age",
+    "storyDropdown" : ".ant-select-selector",
+    "storyOptions" : ".ant-select-item-option",
+    "imageLabel": ".ant-form-item-label",
+    "image" : "span.ant-upload",
+    "submitButton" : ".ant-btn",
+    "tryAgain" : ".btn-primary"
 }
 
 module.exports = elements;

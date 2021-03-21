@@ -32,6 +32,11 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/smoke" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="My Little Hero.Elements exist.TC-006 Gender radio label is present " type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
@@ -64,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616114556812</updated>
-      <workItem from="1616114558183" duration="10467000" />
+      <workItem from="1616114558183" duration="20316000" />
     </task>
     <servers />
   </component>

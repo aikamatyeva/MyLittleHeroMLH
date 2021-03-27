@@ -3,7 +3,7 @@
   "header" : "My Little Hero",
   "instruction" : "Let's create your own HERO! It's super easy with our application!",
   "nameFieldLabel" : "1. What is your Hero's name?",
-  "genderFieldLabel" : "2. Please choose a gender",
+  "genderFieldLabel" : "2. Please choose a gender.",
   "theFirstButtonLabel" : "he",
   "theSecondButtonLabel" : "she",
   "theThirdButtonLabel" : "it",

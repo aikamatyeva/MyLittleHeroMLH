@@ -95,7 +95,7 @@ describe('My Little Hero', function () {
         });
 
         it('TC-014 Submit button is present', function () {
-            let createButton = $(sel.createButton).isDisplayed();
+            let createButton = $(sel.submitButton).isDisplayed();
             expect(createButton).toEqual(true);
         });
     });
